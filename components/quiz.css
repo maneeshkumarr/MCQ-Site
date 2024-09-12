@@ -10,22 +10,19 @@ body{
  padding: 30px 80px;
  border-radius: 5px;
 background-color: blanchedalmond;
-
 }
 
 .logo{
-
 font-size: 2.1rem;
 font-family: cursive;
 filter: drop-shadow(1px 3px 4px rgb(252, 135, 10));
 text-decoration: none;
 }
+
 .nav-list{
   display: flex;
   align-items: center;
   list-style: none;
-
-
 }
 .nav-list li{
 font-size: 1.1rem;
@@ -37,6 +34,7 @@ border-radius: 25px;
 padding: 10px 20px ;
 
 }
+
 .nav-list li:hover{
   background-color: black;
   color: white;
@@ -45,10 +43,111 @@ padding: 10px 20px ;
 .nav-list a{
   text-decoration: none;
   color: black;
-
 }
 .nav-list a:hover{
   color: rgb(255, 255, 255);
   transition: color 0.12s;
+}
+.img1{
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+  
+}
+.img1:hover{
+ transform: scale(1.2);
+}
+.img2:hover{
+  transform: scale(1.2);
+ }
+ .img3:hover{
+  transform: scale(1.2);
+ }
+ .img4:hover{
+  transform: scale(1.2);
+ }
+ .img5:hover{
+  transform: scale(1.2);
+ }
+ .img6:hover{
+  transform: scale(1.2);
+ }
+.img2{
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+ 
+}
+.img3{
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+}
+.img4{
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+}
+.img5{
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+}
+.img6{
+  width: 200px;
+  height: 200px;
+  transition: transform 0.2s;
+}
+.img11{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img12{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+}
+.img14{
+  display: flex;
+  justify-content:space-evenly ;
+  align-items: center;
+}
+@media (max-width:768px){
+  .container{
+    flex-direction: column;
+  }
+  .img1{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+   
+  }
+  .img2{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+   
+  }
+  .img3{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+  }
+  .img4{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+  }
+  .img5{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+  }
+  .img6{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+  }
 
 }
