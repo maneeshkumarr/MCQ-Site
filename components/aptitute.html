@@ -3,25 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="aptitute.css">
 </head>
 <body>
-  <div class="card text-start">
-    <img class="card-img-top" src="holder.js/100px180/" alt="Title" />
-    <div class="card-body">
-      <h4 class="card-title">Title</h4>
-      <p class="card-text">Body</p>
-      \<div class="card text-start">
-        <img class="card-img-top" src="holder.js/100px180/" alt="Title" />
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Body</p>
-          <div class="card text-start">
-            <img class="card-img-top" src="holder.js/100px180/" alt="Title" />
-            <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
-    </div>
-  </div>
-  
+ 
+  <form id="quiz-form">
+    <fieldset>
+        <legend>Question 1: What is the capital of France?</legend>
+        <label>
+            <input type="radio" name="q1" value="a">
+            Paris
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="b">
+            London
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="c">
+            Berlin
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="d">
+            Madrid
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Question 2: What is the largest planet in our solar system?</legend>
+        <label>
+            <input type="radio" name="q2" value="a">
+            Earth
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="b">
+            Jupiter
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="c">
+            Saturn
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="d">
+            Mars
+        </label>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+</form>  
 </body>
 </html>
