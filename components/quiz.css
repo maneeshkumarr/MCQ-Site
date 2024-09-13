@@ -121,7 +121,6 @@ padding: 10px 20px ;
     width: 100px;
     height: 100px;
     transition: transform 0.2s;
-   
   }
   .img2{
     width: 100px;
@@ -149,5 +148,4 @@ padding: 10px 20px ;
     height: 100px;
     transition: transform 0.2s;
   }
-
 }
