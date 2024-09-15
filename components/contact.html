@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="contact.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animated Profile Card</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-  <div class="container">
-<img class=""  src="ADD-LINK.jpg" width="150px" height="150px" alt="maneesh kumar">
-<h1>Maneesh Kumar</h1>
-<ul class="ull">
- <li><a href="#"><img src="linkedin.png" width="30px" height="30px" alt="LinkedIn"></a></li>
- <li><a href="#"><img src="github.png" width="30px" height="30px" alt="github"></a></li>
- <li><a href="#"><img src="resume.png"  width="30px" height="30px" alt="portfolio"></a></li>
-</ul>
-</div>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="ADD-LINK.jpg" alt="Profile Picture" class="profile-pic">
+                <h1 class="name">Maneesh Kumar</h1>
+                <p class="title">Web Developer</p>
+                <button class="know-more-btn">Know More</button>
+            </div>
+            <div class="card-back">
+                <p class="bio">A passionate web developer with a knack for creating beautiful and functional websites. Always eager to learn new technologies and improve skills.</p>
+                <button class="contact-btn">Contact</button>
+                <div class="details">
+                    <p><strong>Skills:</strong> HTML, CSS, JavaScript, React</p>
+                    <p><strong>Experience:</strong> 5 years in web development</p>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+document.getElementById('know-more-btn').addEventListener('click',function()
+{
+    const message=document.getElementById('card-back');
+    const button=document.getElementById('know-more-btn');
+if(message.classList.contains('show')){
+    message.classList.remove('show');
+    message.classList.add('hide');
+    button.setAttribute('aria-expanded','false');
+}else{
+    message.classList.remove('hide');
+    message.classList.add('show');
+    button.setAttribute('aria-expanded','true');  
+}});
+    </script>
 </body>
 </html>
